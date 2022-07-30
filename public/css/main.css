@@ -47,14 +47,14 @@ body {
       display: flex;
       flex-direction: row;
       justify-content: space-between; }
-      .hero header .hero__connection a {
-        justify-content: center;
-        align-items: center;
-        background-color: #fa7436;
-        padding: 10px 45px;
-        margin-right: 25px;
-        border: none;
-        border-radius: 5px;
-        color: #fff; }
-        .hero header .hero__connection a .active {
-          background-color: #fff; }
+      .hero header .hero__connection li {
+        padding: 15px 40px;
+        margin: 0 10px; }
+        .hero header .hero__connection li a {
+          color: #FA7436; }
+        .hero header .hero__connection li:hover {
+          background-color: #FA7436;
+          border-radius: 5px;
+          color: #FFF; }
+          .hero header .hero__connection li:hover a:hover {
+            color: #FFF; }
