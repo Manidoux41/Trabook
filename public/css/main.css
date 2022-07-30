@@ -18,7 +18,10 @@ body {
 .hero {
   width: 80vw;
   height: auto;
-  margin: 0 auto; }
+  margin: 0 auto;
+  /* HEADER */
+  /* Fin du Header */
+  /* PARTIE PROMO */ }
   .hero header {
     display: flex;
     flex-direction: row;
@@ -51,10 +54,48 @@ body {
         padding: 15px 40px;
         margin: 0 10px; }
         .hero header .hero__connection li a {
-          color: #FA7436; }
+          color: #fa7436; }
         .hero header .hero__connection li:hover {
-          background-color: #FA7436;
+          background-color: #fa7436;
           border-radius: 5px;
-          color: #FFF; }
+          color: #fff; }
           .hero header .hero__connection li:hover a:hover {
-            color: #FFF; }
+            color: #fff; }
+  .hero .discover {
+    margin-top: 90px;
+    display: grid;
+    grid-template-columns: 1fr 790px;
+    grid-gap: 30px; }
+    .hero .discover .discover__left {
+      display: flex;
+      width: 525px;
+      flex-direction: column;
+      align-items: flex-start; }
+      .hero .discover .discover__left h2 {
+        font-family: 'Volkhov', serif;
+        font-size: 4rem;
+        font-weight: bold;
+        margin-bottom: 30px; }
+        .hero .discover .discover__left h2 span {
+          color: #FA7436; }
+      .hero .discover .discover__left p {
+        font-size: 1.3rem;
+        line-height: 2.5rem;
+        color: #666666;
+        margin-bottom: 60px; }
+      .hero .discover .discover__left button {
+        color: #FA7436;
+        padding: 1rem 1.5rem;
+        background: #FFF;
+        border: 2px solid #FA7436;
+        border-radius: 5px; }
+    .hero .discover .discover__right {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end; }
+      .hero .discover .discover__right .maurice__image {
+        width: 500px;
+        height: 530px;
+        overflow: hidden;
+        border-radius: 50%; }
