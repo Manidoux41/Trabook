@@ -7,6 +7,7 @@
   header {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 30px 0;
     .hero__title {
@@ -61,19 +62,19 @@
     margin-top: 90px;
     display: grid;
     grid-template-columns: 1fr 790px;
-    grid-gap:30px;
+    grid-gap: 30px;
     .discover__left {
       display: flex;
       width: 525px;
       flex-direction: column;
       align-items: flex-start;
       h2 {
-        font-family: 'Volkhov', serif;
+        font-family: "Volkhov", serif;
         font-size: 4rem;
         font-weight: bold;
         margin-bottom: 30px;
         span {
-          color: #FA7436;
+          color: #fa7436;
         }
       }
       p {
@@ -83,25 +84,73 @@
         margin-bottom: 60px;
       }
       button {
-        color: #FA7436;
+        color: #fa7436;
         padding: 1rem 1.5rem;
-        background: #FFF;
-        border: 2px solid #FA7436;
+        background: #fff;
+        border: 2px solid #fa7436;
         border-radius: 5px;
       }
     }
-    .discover__right{
+    .discover__right {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: flex-end;
       .maurice__image {
-        width: 500px;
+        width: 530px;
         height: 530px;
-        overflow: hidden;
-        border-radius: 50%;        
+        border-radius: 50%;
+        position: relative;
+        z-index: 2;
         img {
-          
+          height: 530px;
+          width: 500px;
+        }
+        .little-card {
+          padding: 18px;
+          border-radius: 8px;
+          background: rgba(255, 255, 255, 0.75);
+          box-shadow: 1px 3px 2px 1px rgba(0, 0, 255, 0.2);
+          position: absolute;
+          z-index: 101;
+          span {
+            font-weight: 500;
+            font-family: 'Poppins', sans-serif;
+            font-size: .8rem;
+          }
+          p{
+            color: #666666;
+            font-weight: 400;
+            font-family: 'Poppins', sans-serif;
+            font-size: .8rem ;
+          }
+          img {
+            float: left;
+            height: 32px;
+            width: 32px;
+            margin-right: 15px;
+          }
+        }
+        .card-1 {
+          top: 48px;
+          left: -75px;
+        }
+        .card-2 {
+          bottom: 168px;
+          left: -85px;
+        }
+        .card-3 {
+          bottom: 238px;
+          right: -75px;
+        }
+        .orange {
+          border-radius: 0 0 265px 265px;
+          width: 530px;
+          height: 265px;
+          background: #fa7436;
+          position: absolute;
+          bottom: 0;
+          z-index: -2;
         }
       }
     }
