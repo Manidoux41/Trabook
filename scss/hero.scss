@@ -5,12 +5,10 @@
 
   /* HEADER */
   header {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
     .hero__title {
+      grid-column: span 1;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -20,6 +18,7 @@
       }
     }
     .hero__navigation {
+      grid-column: 5 / span 4;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -35,9 +34,11 @@
       }
     }
     .hero__connection {
+      grid-column: 10 / 13;
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: flex-end;
+      align-items: center;
       li {
         padding: 15px 40px;
         margin: 0 10px;
@@ -106,7 +107,16 @@
           height: 530px;
           width: 500px;
         }
+        .backgroundplane{
+          width: 780px;
+          position: absolute;
+          bottom: 250px;
+          left: 0px;
+          z-index: -1;
+        }
         .little-card {
+          display: flex;
+          flex-direction: row;
           padding: 18px;
           border-radius: 8px;
           background: rgba(255, 255, 255, 0.75);
@@ -125,7 +135,7 @@
             font-size: .8rem ;
           }
           img {
-            float: left;
+            align-self:center;
             height: 32px;
             width: 32px;
             margin-right: 15px;
