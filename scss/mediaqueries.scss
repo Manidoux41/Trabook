@@ -1,0 +1,35 @@
+@media screen and (max-width: 765px) {
+  .hero {
+    width: 100vw;
+    height: 100%;
+    margin: 0px 3px;
+  }
+  .hero header,
+  .hero .discover {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 320px) {
+  .hero {
+    max-width: 100vw;
+    margin: 30px auto;
+  }
+  .hero .discover .discover__left,
+  .hero .discover .discover__right {
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  .discover__right .maurice__image {
+    max-width: 100vw;
+    margin: 30px auto;
+    img {
+      width: 100vw;
+    }
+    .backgroundplane {
+      width: 100vw;
+    }
+  }
+}
